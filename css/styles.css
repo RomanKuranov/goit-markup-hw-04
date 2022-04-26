@@ -128,6 +128,18 @@ p {
 .list .contact:focus {
   color: var(--accent-color);
 }
+.nav .item {
+  /* text-align: center; */
+  align-content: center;
+}
+.icon-mail {
+  width: 16px;
+  height: 12px;
+}
+.icon-tel {
+  width: 10px;
+  height: 16px;
+}
 /*Hero*/
 .hero-section {
   padding-top: 200px;
@@ -135,6 +147,16 @@ p {
 
   background-color: var(--fotter-color);
   text-align: center;
+
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-section .title {
   margin-left: auto;
@@ -201,6 +223,28 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.specifics-content::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.png);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.png);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.png);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.png);
 }
 /*worck*/
 .worck-section {
