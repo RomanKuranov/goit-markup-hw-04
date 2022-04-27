@@ -117,6 +117,8 @@ p {
 }
 /*Contacts*/
 .list .contact {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -127,18 +129,15 @@ p {
 .list .contact:hover,
 .list .contact:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.nav .item {
-  /* text-align: center; */
-  align-content: center;
+.icon-mail:hover,
+.icon-mail:focus {
+  /* stroke: var(--accent-color); */
 }
-.icon-mail {
-  width: 16px;
-  height: 12px;
-}
+.icon-mail,
 .icon-tel {
-  width: 10px;
-  height: 16px;
+  margin-right: 10px;
 }
 /*Hero*/
 .hero-section {
@@ -224,7 +223,15 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.specifics-content::before {
+.thumb {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  padding: 25px 0;
+}
+/* .specifics-content::before {
   content: '';
   display: block;
   height: 120px;
@@ -245,7 +252,7 @@ p {
 }
 .icon-astronaut::before {
   background-image: url(../images/astronaut.png);
-}
+} */
 /*worck*/
 .worck-section {
   padding-top: 0;
@@ -294,7 +301,7 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 .team-info {
-  padding: 30px 0;
+  padding: 30px 0 16px 0;
 }
 .team-info .title {
   margin-bottom: 10px;
@@ -312,6 +319,38 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.network-thumb {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+.social-network {
+  display: flex;
+  justify-content: center;
+}
+/* Clients */
+.client-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+.client-list .item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  padding: 16px 32px;
+}
+.client-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 /*footer*/
 .footer-page {
@@ -352,6 +391,13 @@ p {
 .address-section .contact:hover,
 .address-section .contact:focus {
   color: var(--accent-color);
+}
+/* footer-icons */
+.network {
+  display: flex;
+}
+.network .link {
+  display: flex;
 }
 
 /*portfolio*/
