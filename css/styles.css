@@ -129,11 +129,9 @@ p {
 .list .contact:hover,
 .list .contact:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 .icon-mail:hover,
 .icon-mail:focus {
-  /* stroke: var(--accent-color); */
 }
 .icon-mail,
 .icon-tel {
@@ -231,28 +229,6 @@ p {
   background-color: #f5f4fa;
   padding: 25px 0;
 }
-/* .specifics-content::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-antenna::before {
-  background-image: url(../images/antenna.png);
-}
-.icon-clock::before {
-  background-image: url(../images/clock.png);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram.png);
-}
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.png);
-} */
 /*worck*/
 .worck-section {
   padding-top: 0;
@@ -301,7 +277,7 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 .team-info {
-  padding: 30px 0 16px 0;
+  padding: 30px 0 30px 0;
 }
 .team-info .title {
   margin-bottom: 10px;
@@ -314,15 +290,13 @@ p {
   color: var(--secondary-text-color);
 }
 .team-info .text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-}
-.network-thumb {
-  padding-top: 0;
-  padding-bottom: 30px;
 }
 .social-network {
   display: flex;
@@ -393,13 +367,35 @@ p {
   color: var(--accent-color);
 }
 /* footer-icons */
+.footer-section {
+  display: flex;
+  align-items: baseline;
+}
+.footer-address {
+  margin-right: 70px;
+}
+.footer-network .text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}
 .network {
   display: flex;
 }
+.network .item:not(:last-child) {
+  margin-right: 10px;
+}
 .network .link {
   display: flex;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
-
 /*portfolio*/
 /*filter*/
 .filter-list {
