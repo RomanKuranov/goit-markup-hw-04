@@ -231,11 +231,13 @@ p {
 }
 .thumb {
   display: flex;
+  height: 120px;
   margin-bottom: 30px;
   justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background-color: #f5f4fa;
-  padding: 25px 0;
+  /* padding: 25px 0; */
 }
 /*worck*/
 .worck-section {
@@ -331,6 +333,9 @@ p {
 }
 .team-icon {
   fill: currentColor;
+}
+.social-network .item:not(:last-child) {
+  margin-right: 10px;
 }
 /* Clients */
 .client-title {
